@@ -15,9 +15,17 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnMoveActivity.setOnClickListener {
-            val moveIntent = Intent(this@MainActivity, MoveActivity::class.java)
-            startActivity(moveIntent)
+        binding.apply {
+            btnMoveActivity.setOnClickListener {
+                val moveIntent = Intent(this@MainActivity, MoveActivity::class.java)
+                startActivity(moveIntent)
+            }
+            btnMoveActivityData.setOnClickListener {
+                val moveWithDataIntent = Intent(this@MainActivity, MoveWithDataActivity::class.java)
+                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Erik Rio Setiawan")
+                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 23)
+                startActivity(moveWithDataIntent)
+            }
         }
     }
 }
