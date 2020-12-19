@@ -1,8 +1,9 @@
-package io.erikrios.github.myintentapp.models
+package io.erikrios.github.myintentapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import io.erikrios.github.myintentapp.databinding.ActivityMoveWithObjectBinding
+import io.erikrios.github.myintentapp.models.Person
 
 class MoveWithObjectActivity : AppCompatActivity() {
 

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myintentapp">
-        <activity android:name=".models.MoveWithObjectActivity"></activity>
+        <activity android:name=".MoveWithObjectActivity"></activity>
         <activity android:name=".MoveWithDataActivity" />
         <activity android:name=".MoveActivity" />
         <activity android:name=".MainActivity">
