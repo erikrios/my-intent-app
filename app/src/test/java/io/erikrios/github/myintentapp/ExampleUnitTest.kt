@@ -1,4 +1,4 @@
-package io.erikrios.github.my_intent_app
+package io.erikrios.github.myintentapp
 
 import org.junit.Test
 

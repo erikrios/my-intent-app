@@ -1,8 +1,8 @@
-package io.erikrios.github.my_intent_app
+package io.erikrios.github.myintentapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import io.erikrios.github.my_intent_app.databinding.ActivityMainBinding
+import io.erikrios.github.myintentapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

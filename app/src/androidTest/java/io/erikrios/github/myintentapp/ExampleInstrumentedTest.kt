@@ -1,4 +1,4 @@
-package io.erikrios.github.my_intent_app
+package io.erikrios.github.myintentapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

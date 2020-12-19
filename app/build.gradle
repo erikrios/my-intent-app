@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "io.erikrios.github.my_intent_app"
+        applicationId "io.erikrios.github.myintentapp"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
