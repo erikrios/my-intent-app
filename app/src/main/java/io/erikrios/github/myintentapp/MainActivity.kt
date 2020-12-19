@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import io.erikrios.github.myintentapp.databinding.ActivityMainBinding
+import io.erikrios.github.myintentapp.models.Person
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +26,14 @@ class MainActivity : AppCompatActivity() {
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Erik Rio Setiawan")
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 23)
                 startActivity(moveWithDataIntent)
+            }
+            btnMoveActivityObject.setOnClickListener {
+                val person =
+                    Person("Erik Rio Setiawan", 23, "erikriosetiawan15@gmail.com", "Ponorogo")
+                val moveWithObjectIntent =
+                    Intent(this@MainActivity, MoveWithObjectActivity::class.java)
+                moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSON, person)
+                startActivity(moveWithObjectIntent)
             }
         }
     }
