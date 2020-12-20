@@ -1,6 +1,7 @@
 package io.erikrios.github.myintentapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import io.erikrios.github.myintentapp.databinding.ActivityMainBinding
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
                     Intent(this@MainActivity, MoveWithObjectActivity::class.java)
                 moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSON, person)
                 startActivity(moveWithObjectIntent)
+            }
+            btnDialNumber.setOnClickListener {
+                val phoneNumber = "081234567890"
+                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
+                startActivity(dialPhoneIntent)
             }
         }
     }
